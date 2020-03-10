@@ -1,0 +1,51 @@
+//main : ../style.less
+
+.header {
+    height: 400px;
+    background: url("../images/bg.jpg") no-repeat center;
+    background-size: cover;
+
+    color: white;
+
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    @media (max-width: 1199px) {
+        .display-2 {
+            font-size: 3.5rem;
+        }
+    }
+
+    @media (max-width: 991px) {
+        .display-2 {
+            font-size: 3.rem;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .header {
+            height: 300px;
+        }
+
+        .display-2{
+            font-size: 2rem;
+        }
+
+    }
+    
+    @media (max-width: 576px) {
+        .lead{
+            font-size:1rem;
+        }
+        .display-2 {
+            font-size: 1.5rem;
+        }
+    }
+
+}
